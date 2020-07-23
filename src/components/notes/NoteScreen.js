@@ -55,7 +55,7 @@ export const NoteScreen = () => {
 
                 { note.url &&
                     <div className="notes__image">
-                        <img src={note.url} alt="note image"/>
+                        <img src={note.url} alt="note"/>
                     </div>
                 }
             </div>
