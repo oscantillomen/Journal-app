@@ -82,7 +82,7 @@ export const startUploading = (file) => {
 		Swal.fire({
 			title: 'Uploading...',
 			text: 'Please wait',
-			allowUotsideClick: false,
+			allowOutsideClick: false,
 			onBeforeLoading: () => {
 				Swal.showLoading();
 			}

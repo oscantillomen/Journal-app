@@ -2,17 +2,16 @@ import firebase from 'firebase/app';
 import 'firebase/firestore'
 import 'firebase/auth';
 
-var firebaseConfig = {
-    apiKey: "AIzaSyAsk8qMAighSU9XBxwVFwG_9m2Shk9RJUk",
-    authDomain: "react-app-cursos-903f1.firebaseapp.com",
-    databaseURL: "https://react-app-cursos-903f1.firebaseio.com",
-    projectId: "react-app-cursos-903f1",
-    storageBucket: "react-app-cursos-903f1.appspot.com",
-    messagingSenderId: "769486441105",
-    appId: "1:769486441105:web:72e0b2dc537c2e6df8cd30"
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASEURL,
+    projectId: process.env.REACT_APP_PROJECTID,
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+    appId: process.env.REACT_APP_APPID
   };
-
-  // Initialize Firebase
+  
   firebase.initializeApp(firebaseConfig);
 
   const db = firebase.firestore()
